@@ -1,0 +1,36 @@
+//UTILS
+@import './utils/normalize';
+@import './utils/fonts.scss';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+//BASE
+@import './base/main-container';
+@import './base/common';
+
+//COMPONENTS
+@import './components/button';
+@import './components/contacts-list';
+@import './components/logo';
+@import './components/section-title';
+@import './components/social-links';
+@import './components/subscription-form';
+@import './components/footer-contacts';
+@import './components/footer-logo';
+@import './components/footer-social-links';
+@import './components/modal-backdrop';
+@import './components/modal-window';
+@import './components/modal-btn-close';
+
+//LAYOUT
+@import './layout/page-header';
+@import './layout/site-nav';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/customer';
+@import './layout/footer';
+@import './layout/modal';
+@import './layout/mobile-menu';
+

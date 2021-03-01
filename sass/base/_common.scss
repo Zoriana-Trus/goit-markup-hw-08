@@ -1,0 +1,44 @@
+body {
+    color: var(--primary-text-color);
+    font-family: var(--main-font-family);
+    letter-spacing: var( --main-letter-spacing);
+    
+  }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+} 
+    
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+
+.address {
+    font-style: normal;
+}
+
+.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen  and (min-width:1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+   
+} 
+

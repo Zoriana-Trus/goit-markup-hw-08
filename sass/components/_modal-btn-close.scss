@@ -1,0 +1,29 @@
+.modal-btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    
+    padding: 6px;
+    margin: 0;
+    
+    color: #000000;
+    
+    border-radius: 50%;
+    background: var(--primary-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: var(--accent-color);
+        }
+    
+    &__icon{
+      fill: currentColor;
+    }
+}    

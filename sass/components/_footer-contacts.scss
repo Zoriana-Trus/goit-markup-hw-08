@@ -1,0 +1,34 @@
+.footer__contacts {
+    padding-right: 13px;
+    margin-right: 70px;
+}
+
+.address__text {
+    margin-bottom: 9px;
+   
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-size: var(--main-font-size);
+    line-height: 1.71;
+} 
+
+.contacts-list--footer {
+    display: inline-block;
+}
+
+.contacts-list__item--footer {
+
+       &:not(:last-child){
+           margin-bottom: 9px;
+       }
+}
+
+.contacts-list__link--footer {
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+       
+    color: var(--footer-contacts-color);
+    line-height: 1.71;
+    font-style: normal;    
+}

@@ -1,0 +1,102 @@
+.hero {
+    max-width: 480px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 118px ;
+    padding-bottom: 118px;
+    background-color: var(--hero-bg-color);
+    border: 1px solid #000000;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/hero-bg-image/hero-tel.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url('../images/hero-bg-image/hero-tel@2x.jpg');
+            } 
+            
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+        height: 400px;
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/hero-bg-image/hero-tablet.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url('../images/hero-bg-image/hero-tablet@2x.jpg');
+            } 
+        
+    }  
+    
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url("../images/hero-bg-image/hero-descktop.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url('../images/hero-bg-image/hero-descktop@2x.jpg');
+            } 
+        
+    } 
+    
+    &__title{
+        max-width: 240px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        color: var(--primary-white-color);
+        font-weight: 900;
+        font-size: 17px;
+        line-height: 1.62;  
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        @media screen and (min-width:480px){
+            max-width: 360px;
+            font-size: 26px; 
+        }
+        
+        @media screen and (min-width:1200px){
+            max-width: 696px;
+            font-size: 44px;
+            line-height: 1.36;
+        }
+
+    }
+
+    &__button {
+        padding: 10px 32px;
+        }
+}
+
