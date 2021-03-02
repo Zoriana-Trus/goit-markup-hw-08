@@ -1,39 +1,95 @@
-.contacts-list {
-    display:none;
+@media screen and (max-width:767px){
+    .contacts-list {
+        display:none;
+    }
 }
-// .contacts-list {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-    
-//     &__item {
+@media screen and (min-width:768px){
+    .contacts-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
-//         &:not(:last-child){
-//             margin-right: 50px;
-//         }
-//     }       
-    
-//     &__link {
-//     display: flex;
-//     align-items: center;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     color: var(--primary-text-color);
-//     font-weight: 500;
-//     font-size: var(--main-font-size);
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     text-decoration: none;
-//     transition: color var(--transition-duration) var(--transition-timing-function);
+        &__item {
 
-//         &:hover,
-//         &:focus {
-//             color: var(--accent-color);
-//         }
-//     }
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        } 
+        
+        &__link {
+           display: flex;
+           align-items: center;
+           color: var(--primary-text-color);
+           font-weight: 500;
+           font-size: 12px;
+           line-height: 1.17;
+           letter-spacing: 0.02em;
+           text-decoration: none;
+           transition: color var(--transition-duration) var(--transition-timing-function);
+
+            &:hover,
+            &:focus {
+                color: var(--accent-color);
+            }
+        }
+
+        &__icon{
+            margin-right: 8px;
+            fill: currentColor;
+        }
+
+        &__icon--mail {
+            width: 14px;  
+            height: 10px;
+        }
+
+        &__icon--tel{
+            width: 10px;  
+            height: 14px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    .contacts-list {
+        align-items:  center;
+        flex-direction: row;
+
+        &__link{
+            padding-top: 32px;
+            padding-bottom: 32px;
+            font-size: var(--main-font-size);
+            line-height: 1.14;    
+            }
+
+        &__item {
+
+            &:not(:last-child){
+            margin-right: 50px;
+            margin-bottom: 0;
+            }
+        } 
+        
+        &__icon{
+            margin-right: 10px;
+           }
+
+        &__icon--mail {
+            width: 16px;  
+            height: 12px;
+        }
+
+        &__icon--tel{
+            width: 10px;  
+            height: 16px;
+        }
+          
+    }
+}
+
+
+
+
     
-//     &__icon{
-//      margin-right: 10px;
-//      fill: currentColor;
-//     }
-// }    
+
+    

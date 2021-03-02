@@ -3,17 +3,28 @@
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%) scale(1);
-    
-    width: 528px;
-    height: 581px;
     padding: 40px;
     
     background-color: var(--primary-white-color);
 
     transform: translate(-50%, -50%) scale(0.9);
     
-    transition: transform var(--transition-duration) var(--transition-timing-function);    
+    transition: transform var(--transition-duration) var(--transition-timing-function); 
+
+    @media screen and (max-width:1199px){
+        width: 100%;
+        max-width: 450px;
+        height: 95%;
+        max-height: 609px;
+    
+        overflow: scroll;
     }
+
+    @media screen and (min-width:1200px){
+        width: 528px;
+        height: 581px;
+    }
+}
     
     
     

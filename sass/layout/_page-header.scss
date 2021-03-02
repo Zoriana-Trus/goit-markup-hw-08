@@ -1,6 +1,9 @@
 .page-header{
-    padding: 10px 0;
-//    position: relative;
+    @media screen and (max-width:767px){
+        padding: 10px 0;
+    }
+
+    border-bottom:1px solid var(--border-color-header)
 }
 
 .page-header__container{
@@ -8,11 +11,5 @@
     justify-content: space-between;
     align-items: center;
 }
-// .page-header{
-//     border-bottom:1px solid var(--border-color-header);
 
-//     &__container {
-//     display: flex;
-//     align-items: center;
-//     }  
-// }
+
