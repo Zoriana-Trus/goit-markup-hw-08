@@ -864,7 +864,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .cards__list-item {
-    width: calc((100% - 4*30px)/2);
+    width: calc((100% - 3*30px)/3);
     margin: 15px;
   }
 }
